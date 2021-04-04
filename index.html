@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FileChart | Visualizing File Systems with Donut Charts</title>
+  </head>
+  <body>
+    <h1 id="title">Donut Chart | Visualizing Disk Files</h1>
+    <div class="settings">
+      <!-- prettier-ignore -->
+      <input type="file" id="directory-picker" name="fileList" webkitdirectory multiple />
+      <select id="select-graph-type">
+        <option disabled>Chart Type</option>
+        <option selected value="file-type">File Type</option>
+        <option value="file-size">File Size</option>
+        <option value="date-modified">Date Modified</option>
+      </select>
+      <select id="color-theme1">
+        <option disabled>Color 1</option>
+        <option value="RedViolet">Red/Violet</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+        <option value="Purple">Purple</option>
+        <option selected value="Random">Random</option>
+      </select>
+      <select id="color-theme2">
+        <option disabled>Color 2</option>
+        <option value="RedViolet">Red/Violet</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+        <option value="Purple">Purple</option>
+        <option selected value="Random">Random</option>
+      </select>
+      <button id="update-color-btn">Update Graph</button>
+    </div>
+    <div id="drawing-area">
+      <canvas id="canvas"></canvas>
+      <div id="legend"></div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
