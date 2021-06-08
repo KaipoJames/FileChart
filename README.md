@@ -1,6 +1,10 @@
 # Visualizing File Systems with Donut Charts
 
-- This project was created for the CS490r data visualization class by Kaipo Wilmeth
+- This Project Aims to make it fun and interactive to view your File System!
+
+# LIVE DEMO
+
+ - https://donut-chart-visualizing-disk-files.netlify.app/
 
 ## Project Introduction
 
